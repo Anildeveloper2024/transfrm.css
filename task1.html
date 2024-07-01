@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(245, 215, 24);
+            display: block;
+            text-align: -webkit-center;
+            unicode-bidi: isolate;
+
+        }
+        header{
+            text-align: center;
+            background-color: rgb(47, 28, 223);
+            color: rgb(220, 20, 36);
+            padding:5px
+        }
+        button{
+            background-color: rgb(220, 20, 60);
+            color: coral;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            transition-property: background-color;
+            transition-delay: 0.8s;
+        }
+
+        button:hover{
+            background-color: rgb(218, 35, 218);
+        }
+        img{
+            height: 200;
+            width: 150;
+            margin-top: 8%;
+            margin-bottom: 10px;
+            position: relative;
+            transition: all5s;
+        }
+        #translate:hover~.main img{
+            transform: translate(60px,100px);
+        }
+        #rotate:hover~.main img{
+            transform: rotate(90deg);
+        }
+        #skew:hover~.main img{
+            transform: skewY(20deg);
+        
+        }
+        #scale:hover~.main img{
+            transform: scale(2);
+        }
+
+        </style>
+        </head>
+
+        <body>
+            <div class="container">
+            <div class="header"><h1>Transforms Examples</h1></div>
+            <div class="Content">
+            <button id="translate">TRANSLATE</button>
+            <button id="rotate">ROTATE</button>
+            <button id="skew">SKEW</button>
+            <button id="scale">SCALE</button>
+            <div class="main"><img src="./cat.image1.jpeg" width="200" height="100"></div>
+            </div>
+</body>
+</html>
